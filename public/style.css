@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root{
+    --black-background : black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navbar{
+    background: var(--black-background);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar li{
+    cursor: pointer;
+    margin: 20px;
+}
+.main{
+    background: #D9D9D9;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.card{
+    width: 50%;
+    height: max-content;
+    padding: 2rem;
+    background: #F5E6E6;
+    border-radius: 1rem;
+    color: #096BFF;
+}
+
+.Todo-list{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rebeccapurple;
+}
+.Todo-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    
+    
+}
+.Todo-item p{
+    padding: 1rem;
+    color: rgb(76, 0, 95);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.container{
+    display: flex;
+}
+input[type = checkbox]{
+    padding: 1rem;
+    width: 200px;
+    background: red;
+    color: red;
+}
+.contacts{
+    /* background: #D9D9D9; */
+    height: max-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.contacts h1{
+    width: 300px;
+    background: #F5E6E6;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #096BFF;
+}
+.contact-card img{
+    object-fit: cover;
+    max-width: 300px;
+}
+.contact-card{
+    width: 300px;
+    background: #F5E6E6;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+.joke-card{
+    width: 300px;
+    width: 300px;
+    background: #F5E6E6;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.joke-card span{
+    color: #096BFF;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: whitesmoke;
+    color: white;
+}
+
+
+
+.container {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.35);
+    margin-top: 1rem;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 15px;
+    top: 5px;
+    width: 18px;
+    height: 36px;
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.container p{
+    margin-left: 1rem;
+    color: darkcyan;
+}
